@@ -19,7 +19,7 @@ public class HelperMethods {
             keys = (ArrayList<Integer>) tempRow.getUserData();
             int key = keys.get(orderChoice);
 
-            if (data * orderType < key * orderType) { // orderType: 1 = Ascending Order, -1 = Descending Order
+            if (data * orderType < key * orderType) { // orderType: 1 = Ascending Order | -1 = Descending Order
                 tempVBox.getChildren().add(i, row);
                 inserted = true;
                 break;
